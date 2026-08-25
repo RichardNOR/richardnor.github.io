@@ -1,0 +1,68 @@
+[
+  {
+    "date": "2026-02-21",
+    "tool": "Python",
+    "title": "Yelp Review Bias Detection (FairwAI)",
+    "slug": "fairwai-yelp-bias",
+    "description": "Analyzed 109,000+ Yelp reviews across 16,000+ businesses in Philadelphia, Tampa, and Indianapolis. Found a 0.63-star cuisine rating gap, neighborhood disparities, and signs of retaliatory reviewing.",
+    "link": "",
+    "status": "featured",
+    "featured": true,
+    "tags": ["Python", "NLP"]
+  },
+  {
+    "date": "2025-10-28",
+    "tool": "Python",
+    "title": "Fuel Economy Data Visualization",
+    "slug": "fuel-economy-viz",
+    "description": "Analyzed 398 vehicle records using Python and Seaborn to identify how weight, engine power, region, and model year affect fuel efficiency. Heavier vehicles averaged up to 30% lower MPG.",
+    "link": "https://github.com/RichardNOR/Mpg-fuel-efficiency-analysis/blob/main/Mpg_fuel_efficiency_analysis%20.ipynb",
+    "status": "featured",
+    "featured": true,
+    "tags": ["Python", "Seaborn", "data-viz"]
+  },
+  {
+    "date": "2025-06-01",
+    "tool": "SQL",
+    "title": "Art Across Borders",
+    "slug": "art-across-borders",
+    "description": "Used SQL joins, subqueries, and aggregations across 50+ museums and 20+ art styles. Found Impressionism dominated the Met's holdings at 244+ works.",
+    "link": "https://docs.google.com/document/d/1vZefn-aIP9s01I9WqWyjj0dqDESDFcqAxScZSl_WJPo/edit?tab=t.0",
+    "status": "featured",
+    "featured": true,
+    "tags": ["SQL"]
+  },
+  {
+    "date": "2025-05-02",
+    "tool": "Excel",
+    "title": "Movie Profitability: Revenue vs. Budget",
+    "slug": "movie-profitability",
+    "description": "Pivot tables and statistical analysis of movie budgets vs. box office revenue by genre and rating.",
+    "link": "https://1drv.ms/x/c/1043e564fa50e527/ESflUPpk5UMggBBKAwAAAAABYgQmEqzG2RoscFAIneYR5g?e=RM2JIj",
+    "status": "completed",
+    "featured": false,
+    "tags": ["Excel"]
+  },
+  {
+    "date": "2025-03-01",
+    "tool": "Tableau",
+    "title": "COVID-19 Impact on Food Consumption",
+    "slug": "covid-food-consumption",
+    "description": "Interactive dashboard analyzing global food consumption shifts during COVID-19 across demographics.",
+    "link": "https://public.tableau.com/shared/7Q8HDBXBS?:display_count=n&:origin=viz_share_link",
+    "status": "completed",
+    "featured": false,
+    "tags": ["Tableau"]
+  },
+  {
+    "date": "2025-01-01",
+    "tool": "Power BI",
+    "title": "Adventure Works",
+    "slug": "adventure-works",
+    "description": "Interactive dashboard analyzing sales and profit trends by product, category, and region for executive-level reporting.",
+    "link": "https://app.powerbi.com/view?r=eyJrIjoiMDg4M2I5MGQtMzdiMC00NzAyLWI3OWItNTU4ZGJiNmEwN2UxIiwidCI6IjMzYjU1NzA5LTdmZjMtNGFmMS05ZWRjLWU2YTc2OGZjNzRmNiIsImMiOjN9",
+    "status": "completed",
+    "featured": false,
+    "tags": ["Power BI"]
+  }
+]
