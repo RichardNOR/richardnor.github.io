@@ -1,0 +1,119 @@
+///
+/// Projects archive
+///
+
+#projects-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	margin: 0 0 2em 0;
+
+	.project-filter {
+		border: solid 1px _palette(border);
+		border-radius: _size(border-radius);
+		background: transparent;
+		color: _palette(fg);
+		cursor: pointer;
+		font-size: 0.8em;
+		letter-spacing: 0.1em;
+		padding: 0.5em 1.25em;
+		text-transform: uppercase;
+		transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+		&:hover {
+			border-color: _palette(fg);
+		}
+
+		&.active {
+			background-color: _palette(accent1);
+			border-color: _palette(accent1);
+			color: _palette(fg-bold);
+		}
+	}
+}
+
+#projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 1.5em;
+
+	.project-card {
+		background: _palette(bg-alt);
+		border: solid 1px _palette(border-bg);
+		border-radius: _size(border-radius);
+		padding: 1.5em;
+		display: flex;
+		flex-direction: column;
+
+		h3 {
+			font-size: 1.1em;
+			margin: 0 0 0.35em 0;
+		}
+
+		.project-card-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 0.75em;
+		}
+
+		.project-status {
+			border-radius: _size(border-radius);
+			font-size: 0.7em;
+			letter-spacing: 0.1em;
+			padding: 0.25em 0.6em;
+			text-transform: uppercase;
+			background: _palette(border-bg);
+			color: _palette(fg-light);
+
+			&.project-status-featured {
+				background: _palette(accent3);
+				color: _palette(fg-bold);
+			}
+
+			&.project-status-in-progress {
+				background: _palette(accent2);
+				color: _palette(fg-bold);
+			}
+		}
+
+		.project-date {
+			color: _palette(fg-light);
+			font-size: 0.8em;
+		}
+
+		.project-tool {
+			color: _palette(fg-light);
+			font-size: 0.8em;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			margin: 0 0 0.75em 0;
+		}
+
+		.project-description {
+			flex: 1;
+			font-size: 0.9em;
+			margin: 0 0 1em 0;
+		}
+
+		.project-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.4em;
+			margin-bottom: 1em;
+
+			.project-tag {
+				background: _palette(border-bg);
+				border-radius: _size(border-radius);
+				color: _palette(fg-light);
+				font-size: 0.7em;
+				padding: 0.2em 0.6em;
+			}
+		}
+
+		.project-links {
+			display: flex;
+			gap: 0.5em;
+		}
+	}
+}
