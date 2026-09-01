@@ -4,7 +4,6 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
-@import 'fontawesome-all.min.css';
 
 /*
 	Hyperspace by HTML5 UP
@@ -31,23 +30,13 @@
 
 // Component.
 
-	@import 'components/row';
-	@import 'components/box';
-	@import 'components/button';
-	@import 'components/features';
 	@import 'components/form';
-	@import 'components/icon';
-	@import 'components/image';
 	@import 'components/list';
-	@import 'components/actions';
 	@import 'components/contact';
-	@import 'components/icons';
 	@import 'components/menu';
 	@import 'components/projects';
 	@import 'components/section';
 	@import 'components/split';
-	@import 'components/spotlights';
-	@import 'components/table';
 	@import 'components/wrapper';
 
 // Layout.
@@ -55,9 +44,8 @@
 	@import 'layout/header';
 	@import 'layout/wrapper';
 	@import 'layout/footer';
-	@import 'layout/sidebar';
-	@import 'layout/intro';
 
-// Site-wide light theme (imported last so it wins any same-specificity ties).
+// Minimal, text-first site content (home/resume/skills/contact + nav).
+// Does not touch #one (Projects) — see components/projects.scss.
 
-	@import 'components/site-light';
+	@import 'components/content';

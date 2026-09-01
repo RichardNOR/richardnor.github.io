@@ -11,42 +11,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="is-preload">
 
-<!-- Sidebar -->
-<section id="sidebar">
-    <div class="inner">
-        <nav>
-            <ul>
-                <li><a href="#intro">Hi There — Welcome</a></li>
-                <li><a href="#one">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#two">Skills</a></li>
-                <li><a href="#three">Reach Out</a></li>
-            </ul>
-        </nav>
-    </div>
-</section>
+<!-- Header -->
+<header id="header">
+    <a href="#home" class="title scrolly">Richard Noruwa</a>
+    <nav>
+        <ul>
+            <li><a href="#home" class="scrolly">home</a></li>
+            <li><a href="#one" class="scrolly">projects</a></li>
+            <li><a href="#resume" class="scrolly">resume</a></li>
+            <li><a href="#contact" class="scrolly">contact</a></li>
+            <!--
+                To add later without a rebuild, just append list items here, e.g.:
+                <li><a href="#writing" class="scrolly">writing</a></li>
+                <li><a href="https://github.com/RichardNOR" target="_blank">github</a></li>
+            -->
+        </ul>
+    </nav>
+</header>
 
 <!-- Wrapper -->
 <div id="wrapper">
 
-    <!-- Intro --> 
-    <section id="intro" class="wrapper style1 fullscreen fade-up">
-        <div class="inner">
-            <h1>Richard Noruwa – Analyst</h1>
-            <p>
-                Proficient in SQL, Excel & Tableau | Data Cleaning, Visualization & Reporting – 
-                Connect with me here 
-                <a href="https://www.linkedin.com/in/richard-noruwa-166a622b2" target="_blank" style="margin-left: 5px; color: #0e76a8;">
-                    <i class="fab fa-linkedin" style="font-size: 1.2em;"></i>
-                </a>
+    <!-- Home -->
+    <section id="home">
+        <div class="container">
+            <h1>Richard Noruwa</h1>
+            <p>I'm a data analyst working with SQL, Excel, Python, and Tableau — cleaning, visualizing, and reporting on data to turn it into clear, actionable insights.</p>
+            <p class="links">
+                <a href="https://www.linkedin.com/in/richard-noruwa-166a622b2" target="_blank">LinkedIn</a>
+                &middot;
+                <a href="mailto:noruwa.richard@gmail.com">noruwa.richard@gmail.com</a>
             </p>
-            <ul class="actions">
-                <li><a href="#one" class="button scrolly">Learn more</a></li>
-            </ul>
         </div>
     </section>
 
@@ -58,71 +56,33 @@
     </section>
 
     <!-- Resume -->
-<section id="resume" class="wrapper style2 spotlights">
-    <div class="inner" style="text-align: center;">
-        <span class="icon solid major fa-file-alt" style="font-size: 4em; margin-bottom: 20px;"></span>
-        <h2>My Resume</h2>
-        <p>Download my complete professional resume to learn more about my background, skills, and experience in data analysis and business intelligence.</p>
-        <ul class="actions">
-            <li>
-                <a href="Based Resume (5).pdf"
-                   target="_blank"
-                   class="button scrolly">
-                    <span class="icon solid fa-download" style="margin-right: 8px;"></span>
-                    View Resume
-                </a>
-            </li>
-        </ul>
-    </div>
-</section>
-
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my background, skills, and experience in data analysis and business intelligence — <a href="Based Resume (5).pdf" target="_blank">view / download (PDF)</a>.</p>
+        </div>
+    </section>
 
     <!-- Skills -->
-    <section id="two" class="wrapper style3 fade-up">
-        <div class="inner">
+    <section id="skills">
+        <div class="container">
             <h2>Skills</h2>
             <p>Proficient in multiple data analysis tools and programming languages with hands-on experience in business intelligence, statistical analysis, and data visualization across various platforms.</p>
-            <div class="features">
-                <section>
-                    <span class="icon solid major fa-code"></span>
-                    <h3>Python</h3>
-                    <p>Libraries: pandas, matplotlib, NumPy, seaborn for comprehensive data analysis and visualization.</p>
-                </section>
-                <section>
-                    <span class="icon solid major fa-chart-bar"></span>
-                    <h3>Power BI</h3>
-                    <p>Tools: DAX, API integration, Power Query for advanced business intelligence and interactive reporting.</p>
-                </section>
-                <section>
-                    <span class="icon solid major fa-database"></span>
-                    <h3>SQL</h3>
-                    <p>Software: SQLite, MySQL for database management, complex queries, and data extraction.</p>
-                </section>
-                <section>
-                    <span class="icon solid major fa-chart-line"></span>
-                    <h3>Tableau</h3>
-                    <p>Data Visualization, Interactive Dashboards, and advanced analytics for compelling data storytelling.</p>
-                </section>
-                <section>
-                    <span class="icon solid major fa-table"></span>
-                    <h3>Excel</h3>
-                    <p>Tools: Pivot Tables, Pivot Charts, VLOOKUP, HLOOKUP, VBA for advanced spreadsheet analysis and automation.</p>
-                </section>
-                <section>
-                    <span class="icon major fa-gem"></span>
-                    <h3>Data Analysis</h3>
-                    <p>Statistical analysis, trend identification, and business insights across multiple industries and datasets.</p>
-                </section>
-            </div>
-            <ul class="actions">
-                <li><a href="#one" class="button">View Projects</a></li>
+            <ul class="alt">
+                <li><strong>Python</strong> — Libraries: pandas, matplotlib, NumPy, seaborn for comprehensive data analysis and visualization.</li>
+                <li><strong>Power BI</strong> — Tools: DAX, API integration, Power Query for advanced business intelligence and interactive reporting.</li>
+                <li><strong>SQL</strong> — Software: SQLite, MySQL for database management, complex queries, and data extraction.</li>
+                <li><strong>Tableau</strong> — Data Visualization, Interactive Dashboards, and advanced analytics for compelling data storytelling.</li>
+                <li><strong>Excel</strong> — Tools: Pivot Tables, Pivot Charts, VLOOKUP, HLOOKUP, VBA for advanced spreadsheet analysis and automation.</li>
+                <li><strong>Data Analysis</strong> — Statistical analysis, trend identification, and business insights across multiple industries and datasets.</li>
             </ul>
+            <p><a href="#one" class="scrolly">View projects &rarr;</a></p>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="three" class="wrapper style1 fade-up">
-        <div class="inner">
+    <section id="contact">
+        <div class="container">
             <h2>Feel free to reach out</h2>
             <p>Interested in connecting? I'd love to hear from you.</p>
             <div class="split style1">
@@ -142,9 +102,7 @@
                                 <textarea name="message" id="message" rows="5"></textarea>
                             </div>
                         </div>
-                        <ul class="actions">
-                            <li><button type="submit" class="button submit">Send Message</button></li>
-                        </ul>
+                        <button type="submit" class="btn-plain">Send Message</button>
                     </form>
                 </section>
                 <section>
@@ -163,10 +121,9 @@
                         </li>
                         <li>
                             <h3>Social</h3>
-                            <ul class="icons">
-                                <li><a href="https://github.com/RichardNOR" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                                <li><a href="https://www.linkedin.com/in/richard-noruwa-166a622b2" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                            </ul>
+                            <a href="https://github.com/RichardNOR" target="_blank">GitHub</a>
+                            &middot;
+                            <a href="https://www.linkedin.com/in/richard-noruwa-166a622b2" target="_blank">LinkedIn</a>
                         </li>
                     </ul>
                 </section>

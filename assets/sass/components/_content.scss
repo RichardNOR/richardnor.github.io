@@ -1,0 +1,61 @@
+///
+/// Minimal, text-first page content — home/resume/skills/contact + nav.
+/// Plain off-white background, dark ink text, hairline borders, no icons,
+/// no gradients, no colored call-to-action buttons.
+///
+/// Does NOT touch #one (Projects) — that section keeps its own wrapper/
+/// fade-up markup and independent stylesheet (components/_projects.scss).
+///
+
+	.container {
+		@include padding(5em, 5em);
+		margin: 0 auto;
+		max-width: _size(inner-width);
+
+		@include breakpoint('<=xlarge') {
+			@include padding(4em, 4em);
+		}
+
+		@include breakpoint('<=small') {
+			@include padding(3em, 2em);
+		}
+	}
+
+	#resume,
+	#skills,
+	#contact {
+		border-top: solid 1px _palette(border);
+	}
+
+	#home {
+		p.links {
+			margin-top: 1.5em;
+		}
+	}
+
+	#skills {
+		ul.alt li strong {
+			color: _palette(fg-bold);
+			margin-right: 0.35em;
+		}
+	}
+
+	// A restrained, hairline-bordered button — used only where a real
+	// control is needed (the contact form's submit). Everywhere else a
+	// plain inline text link does the job.
+	.btn-plain {
+		background: none;
+		border: solid 1px _palette(border);
+		border-radius: _size(border-radius);
+		color: _palette(fg-bold);
+		cursor: pointer;
+		display: inline-block;
+		font: inherit;
+		font-size: 0.85em;
+		letter-spacing: 0.02em;
+		padding: 0.6em 1.4em;
+
+		&:hover {
+			border-color: _palette(fg-bold);
+		}
+	}
