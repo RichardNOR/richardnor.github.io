@@ -57,3 +57,7 @@
 	@import 'layout/footer';
 	@import 'layout/sidebar';
 	@import 'layout/intro';
+
+// Site-wide light theme (imported last so it wins any same-specificity ties).
+
+	@import 'components/site-light';

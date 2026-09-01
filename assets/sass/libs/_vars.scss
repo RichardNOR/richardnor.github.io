@@ -32,18 +32,20 @@
 	);
 
 // Palette.
+// Light theme, matching the Projects section's tokens (see components/_projects.scss):
+// off-white surfaces, dark ink text, hairline borders, no per-section accent colors.
 	$palette: (
-		bg:					#312450,
-		bg-alt:				darken(#312450, 5),
-		fg:					rgba(255,255,255,0.55),
-		fg-bold:			#ffffff,
-		fg-light:			rgba(255,255,255,0.35),
-		border:				rgba(255,255,255,0.15),
-		border-bg:			rgba(255,255,255,0.05),
-		accent1:			#5e42a6,
-		accent1-alt:		darken(#5e42a6, 10),
-		accent2:			#5052b5,
-		accent2-alt:		darken(#5052b5, 10),
-		accent3:			#b74e91,
-		accent3-alt:		darken(#b74e91, 10)
+		bg:					#f9f9f7,
+		bg-alt:				#f2f1ee,
+		fg:					#52514e,
+		fg-bold:			#0b0b0b,
+		fg-light:			#898781,
+		border:				rgba(11,11,11,0.10),
+		border-bg:			#fcfcfb,
+		accent1:			#f9f9f7,
+		accent1-alt:		#f2f1ee,
+		accent2:			#f9f9f7,
+		accent2-alt:		#f2f1ee,
+		accent3:			#f9f9f7,
+		accent3-alt:		#f2f1ee
 	);
