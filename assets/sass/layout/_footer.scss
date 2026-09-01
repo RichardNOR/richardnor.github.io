@@ -7,14 +7,6 @@
 /* Footer */
 
 	#footer {
-		#sidebar + #wrapper + & {
-			margin-left: _size(sidebar-width);
-
-			@include breakpoint('<=large') {
-				margin-left: 0;
-			}
-		}
-
 		> .inner {
 			a {
 				border-bottom-color: _palette(border);
@@ -25,8 +17,8 @@
 			}
 
 			.menu {
+				color: _palette(fg-light);
 				font-size: 0.8em;
-				color: _palette(border);
 			}
 		}
 
