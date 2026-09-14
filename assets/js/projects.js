@@ -294,7 +294,10 @@
 			var meta = STATUS_META[p.status];
 			var href = p.link || p.videoLink;
 			var titleHtml = href
-				? '<a class="pl-title" href="' + esc(href) + '" target="_blank" rel="noopener">' + esc(p.title) + '</a>'
+				? '<span class="pl-title-cell">' +
+				  '<a class="pl-title" href="' + esc(href) + '" target="_blank" rel="noopener">' + esc(p.title) + '</a> ' +
+				  '<a class="btn-plain" href="' + esc(href) + '" target="_blank" rel="noopener">View project</a>' +
+				  '</span>'
 				: '<span class="pl-title">' + esc(p.title) + '</span>';
 
 			return (
