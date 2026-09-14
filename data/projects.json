@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-09-01",
+    "tool": "Excel",
+    "title": "Book Sales Performance & BI Reporting Design",
+    "slug": "book-sales-bi-design",
+    "description": "Unpivoted 170 columns of wide-format sales data spanning 42 months, then built four Excel charts and a full written analysis. Found one title with a major early spike whose conversion rate kept climbing even as traffic fell, and another with negative revenue in two months where returns outpaced sales. Also designed how the same data would be structured in Power BI — dimensions, KPIs, filters, three DAX measures, and tailored report views for Finance versus Marketing.",
+    "link": "https://lnkd.in/erzn2b9W",
+    "status": "featured",
+    "featured": true,
+    "tags": ["Excel", "Power BI", "DAX"]
+  },
+  {
     "date": "2026-02-21",
     "tool": "Python",
     "title": "Yelp Review Bias Detection (FairwAI)",
@@ -16,7 +27,7 @@
     "title": "Fuel Economy Data Visualization",
     "slug": "fuel-economy-viz",
     "description": "Analyzed 398 vehicle records using Python and Seaborn to identify how weight, engine power, region, and model year affect fuel efficiency. Found that heavier vehicles averaged up to 30% lower MPG. For a company managing a vehicle fleet, this type of analysis could save thousands annually by guiding purchasing toward lighter, more efficient models.",
-    "link": "https://github.com/RichardNOR/Mpg-fuel-efficiency-analysis/blob/main/Mpg_fuel_efficiency_analysis%20.ipynb",
+    "link": "",
     "status": "featured",
     "featured": true,
     "tags": ["Python", "Seaborn", "data-viz"]
