@@ -27,7 +27,7 @@
     "title": "Fuel Economy Data Visualization",
     "slug": "fuel-economy-viz",
     "description": "Analyzed 398 vehicle records using Python and Seaborn to identify how weight, engine power, region, and model year affect fuel efficiency. Found that heavier vehicles averaged up to 30% lower MPG. For a company managing a vehicle fleet, this type of analysis could save thousands annually by guiding purchasing toward lighter, more efficient models.",
-    "link": "",
+    "link": "https://nbviewer.org/github/RichardNOR/Python-Project--Fuel-fuel-economy-mpg/blob/main/Python%20Project..%20%28MPG%29%20%20%281%29.ipynb",
     "status": "featured",
     "featured": true,
     "tags": ["Python", "Seaborn", "data-viz"]
