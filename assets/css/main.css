@@ -1394,7 +1394,12 @@ body.is-ie .wrapper.fullscreen {
 
 @media screen and (max-width: 480px) {
   .blog-row-link {
-    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35em;
+  }
+  .blog-thumb {
+    display: none;
   }
   .blog-row-date {
     width: auto;

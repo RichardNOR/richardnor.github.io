@@ -83,7 +83,13 @@
 
 	@include breakpoint('<=xsmall') {
 		.blog-row-link {
-			flex-wrap: wrap;
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 0.35em;
+		}
+
+		.blog-thumb {
+			display: none;
 		}
 
 		.blog-row-date {
