@@ -5,7 +5,7 @@
     "title": "Book Sales Performance & BI Reporting Design",
     "slug": "book-sales-bi-design",
     "description": "Unpivoted 170 columns of wide-format sales data spanning 42 months, then built four Excel charts and a full written analysis. Found one title with a major early spike whose conversion rate kept climbing even as traffic fell, and another with negative revenue in two months where returns outpaced sales. Also designed how the same data would be structured in Power BI — dimensions, KPIs, filters, three DAX measures, and tailored report views for Finance versus Marketing.",
-    "link": "https://lnkd.in/erzn2b9W",
+    "link": "https://drive.google.com/file/d/1BAH5NC_lZ1SozmUzGMs6-VhrNdPYjdeu/view?usp=sharing",
     "status": "featured",
     "featured": true,
     "tags": ["Excel", "Power BI", "DAX"]
