@@ -1,0 +1,142 @@
+///
+/// Blog — index list + post page. Matches the site's minimal light theme
+/// (components/_content.scss): plain background, dark ink, hairline
+/// borders, no icons, no colored blocks.
+///
+/// Does NOT touch #one (Projects) or components/_projects.scss.
+///
+
+	// Index page
+
+	.blog-group-heading {
+		color: _palette(fg-light);
+		font-size: 0.85em;
+		letter-spacing: 0.08em;
+		margin: 2.5em 0 1em 0;
+		text-transform: uppercase;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.blog-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.blog-row {
+		border-bottom: solid 1px _palette(border);
+		margin: 0;
+		padding: 0;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	.blog-row-link {
+		align-items: center;
+		border: 0;
+		color: inherit;
+		display: flex;
+		gap: 1.25em;
+		padding: 1em 0.5em;
+
+		&:hover {
+			background: rgba(11, 11, 11, 0.04);
+		}
+	}
+
+	.blog-thumb {
+		background-position: center center;
+		background-size: cover;
+		border-radius: _size(border-radius);
+		flex-shrink: 0;
+		height: 3.25em;
+		object-fit: cover;
+		width: 3.25em;
+
+		&.blog-thumb-empty {
+			visibility: hidden;
+		}
+	}
+
+	.blog-row-date {
+		color: _palette(fg-light);
+		flex-shrink: 0;
+		font-size: 0.85em;
+		font-variant-numeric: tabular-nums;
+		width: 6em;
+	}
+
+	.blog-row-title {
+		color: _palette(fg-bold);
+		font-weight: _font(weight-bold);
+	}
+
+	.blog-empty {
+		color: _palette(fg-light);
+		padding: 2em 0;
+	}
+
+	@include breakpoint('<=xsmall') {
+		.blog-row-link {
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 0.35em;
+		}
+
+		.blog-thumb {
+			display: none;
+		}
+
+		.blog-row-date {
+			width: auto;
+		}
+	}
+
+	// Post page
+
+	.blog-post-title {
+		margin-bottom: 0.3em;
+	}
+
+	.blog-post-meta {
+		color: _palette(fg-light);
+		font-size: 0.9em;
+		margin-bottom: 1em;
+	}
+
+	.blog-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5em;
+		margin-bottom: 2.5em;
+	}
+
+	.blog-tag {
+		background: _palette(border-bg);
+		border-radius: 999px;
+		color: _palette(fg-light);
+		font-size: 0.75em;
+		letter-spacing: 0.04em;
+		padding: 0.25em 0.85em;
+		text-transform: uppercase;
+	}
+
+	.blog-content {
+		> :first-child {
+			margin-top: 0;
+		}
+
+		h2, h3 {
+			margin-top: 1.75em;
+		}
+
+		img {
+			border-radius: _size(border-radius);
+			max-width: 100%;
+		}
+	}
