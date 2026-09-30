@@ -71,10 +71,18 @@
 			title: data.title || 'Untitled',
 			slug: data.slug || '',
 			description: data.description || '',
-			tags: data.tags ? data.tags.split(',').map(function (t) { return t.trim(); }).filter(Boolean) : [],
+			tags: data.tags ? parseTags(data.tags) : [],
 			thumbnail: data.thumbnail || '',
 			contentMarkdown: parsed.content
 		};
+	}
+
+	// Accepts either `tags: a, b, c` or `tags: [a, b, c]`.
+	function parseTags(value) {
+		var trimmed = value.trim();
+		if (trimmed.charAt(0) === '[' && trimmed.charAt(trimmed.length - 1) === ']')
+			trimmed = trimmed.slice(1, -1);
+		return trimmed.split(',').map(function (t) { return t.trim(); }).filter(Boolean);
 	}
 
 	// --- helpers ---------------------------------------------------------
